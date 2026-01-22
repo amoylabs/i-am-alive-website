@@ -27,7 +27,7 @@
           
           <!-- Quick Links -->
           <div class="grid md:grid-cols-2 gap-6 mb-16">
-            <a href="mailto:iamalive-support@amoylabs.com" class="glass-card p-6 hover:shadow-2xl transition-all group">
+            <a href="mailto:iamalive@amoylabs.com" class="glass-card p-6 hover:shadow-2xl transition-all group">
               <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-alive-orange to-amber-400 flex items-center justify-center mb-4 shadow-lg shadow-alive-orange/20 group-hover:scale-110 transition-transform">
                 <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -35,7 +35,7 @@
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">Email Support</h3>
               <p class="text-gray-600 mb-2">Get help via email. We typically respond within 24 hours.</p>
-              <span class="text-alive-orange font-medium">iamalive-support@amoylabs.com →</span>
+              <span class="text-alive-orange font-medium">iamalive@amoylabs.com →</span>
             </a>
             
             <a href="https://twitter.com/iamaliveapp" target="_blank" rel="noopener noreferrer" class="glass-card p-6 hover:shadow-2xl transition-all group">
@@ -119,7 +119,7 @@
             <p class="text-gray-600 mb-6">
               Can't find the answer you're looking for? Our support team is happy to assist.
             </p>
-            <a href="mailto:iamalive-support@amoylabs.com" class="btn-primary">
+            <a href="mailto:iamalive@amoylabs.com" class="btn-primary">
               Contact Support
             </a>
           </div>

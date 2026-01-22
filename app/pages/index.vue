@@ -327,7 +327,7 @@
           <nav class="flex flex-wrap justify-center gap-6 text-sm">
             <NuxtLink to="/privacy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</NuxtLink>
             <NuxtLink to="/support" class="text-gray-400 hover:text-white transition-colors">Support</NuxtLink>
-            <a href="mailto:iamalive-support@amoylabs.com" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+            <a href="mailto:iamalive@amoylabs.com" class="text-gray-400 hover:text-white transition-colors">Contact</a>
           </nav>
           
           <p class="text-sm text-gray-500">
