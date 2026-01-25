@@ -3,7 +3,29 @@ export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
     devtools: { enabled: true },
     css: ['~/assets/css/main.css'],
-    modules: ['@nuxtjs/tailwindcss'],
+    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
+    i18n: {
+        locales: [
+            { code: 'en', name: 'English', file: 'en.json' },
+            { code: 'zh', name: '简体中文', file: 'zh.json' }
+        ],
+        defaultLocale: 'en',
+        lazy: true,
+        langDir: '../locales',
+        strategy: 'prefix_except_default',
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'i18n_redirected',
+            redirectOn: 'root'
+        },
+        compilation: {
+            strictMessage: false
+        },
+        bundle: {
+            optimizeTranslationDirective: false
+        },
+        vueI18n: './i18n.config.ts'
+    },
     app: {
         head: {
             title: 'I am alive! - Safety Net for Solo Dwellers',

@@ -3,23 +3,26 @@
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
       <div class="section-container flex items-center justify-between h-16">
-        <NuxtLink to="/" class="flex items-center gap-2 group">
+        <NuxtLink :to="localePath('/')" class="flex items-center gap-2 group">
           <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-alive-orange to-amber-400 flex items-center justify-center shadow-lg shadow-alive-orange/20 group-hover:shadow-alive-orange/40 transition-shadow">
             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
             </svg>
           </div>
-          <span class="font-bold text-xl text-gray-900">I am alive!</span>
+          <span class="font-bold text-xl text-gray-900">{{ $t('app.name') }}</span>
         </NuxtLink>
         
         <div class="hidden md:flex items-center gap-8">
-          <a href="#features" class="text-gray-600 hover:text-alive-orange transition-colors font-medium">Features</a>
-          <a href="#how-it-works" class="text-gray-600 hover:text-alive-orange transition-colors font-medium">How It Works</a>
-          <NuxtLink to="/privacy" class="text-gray-600 hover:text-alive-orange transition-colors font-medium">Privacy</NuxtLink>
-          <NuxtLink to="/support" class="text-gray-600 hover:text-alive-orange transition-colors font-medium">Support</NuxtLink>
+          <a href="#features" class="text-gray-600 hover:text-alive-orange transition-colors font-medium">{{ $t('nav.features') }}</a>
+          <a href="#how-it-works" class="text-gray-600 hover:text-alive-orange transition-colors font-medium">{{ $t('nav.howItWorks') }}</a>
+          <NuxtLink :to="localePath('/privacy')" class="text-gray-600 hover:text-alive-orange transition-colors font-medium">{{ $t('nav.privacy') }}</NuxtLink>
+          <NuxtLink :to="localePath('/support')" class="text-gray-600 hover:text-alive-orange transition-colors font-medium">{{ $t('nav.support') }}</NuxtLink>
         </div>
         
-        <a href="#download" class="btn-secondary text-sm py-2 px-4">Download</a>
+        <div class="flex items-center gap-4">
+          <LanguageSwitcher />
+          <a href="#download" class="btn-secondary text-sm py-2 px-4">{{ $t('nav.download') }}</a>
+        </div>
       </div>
     </nav>
 
@@ -38,28 +41,26 @@
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-alive-orange opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-2 w-2 bg-alive-orange"></span>
               </span>
-              Available on iOS
+              {{ $t('hero.availableOn') }}
             </div>
             
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-              The Safety Net for
-              <span class="gradient-text"> Solo Dwellers</span>
+              {{ $t('hero.title') }}
+              <span class="gradient-text"> {{ $t('hero.titleHighlight') }}</span>
+              <template v-if="$te('hero.titleSuffix')">{{ $t('hero.titleSuffix') }}</template>
             </h1>
             
-            <p class="text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
-              Daily check-ins keep your loved ones informed. 
-              If you miss a check-in, your emergency contacts are <strong class="text-gray-800">automatically alerted</strong>.
-            </p>
+            <p class="text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0" v-html="heroDescription"></p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="#download" class="btn-primary">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                 </svg>
-                Download on App Store
+                {{ $t('hero.downloadButton') }}
               </a>
               <a href="#how-it-works" class="btn-secondary">
-                Learn More
+                {{ $t('hero.learnMore') }}
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
@@ -76,9 +77,9 @@
                 <div class="aspect-[9/19] bg-gradient-to-br from-orange-50 to-blue-50 p-6 flex flex-col items-center justify-center">
                   <!-- App Header -->
                   <div class="text-center mb-8">
-                    <p class="text-gray-500 text-sm">Welcome to</p>
-                    <h2 class="text-2xl font-bold text-gray-900">I am alive!</h2>
-                    <p class="text-gray-600 text-sm mt-1">Your daily safety companion</p>
+                    <p class="text-gray-500 text-sm">{{ $t('mockup.welcomeTo') }}</p>
+                    <h2 class="text-2xl font-bold text-gray-900">{{ $t('app.name') }}</h2>
+                    <p class="text-gray-600 text-sm mt-1">{{ $t('mockup.companion') }}</p>
                   </div>
                   
                   <!-- Pulse Button -->
@@ -90,7 +91,7 @@
                         <svg class="w-10 h-10 mx-auto mb-1" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                         </svg>
-                        <span class="text-sm font-bold">I AM ALIVE!</span>
+                        <span class="text-sm font-bold">{{ $t('mockup.iAmAliveButton') }}</span>
                       </div>
                     </div>
                   </div>
@@ -99,8 +100,8 @@
                   <div class="bg-white rounded-xl px-4 py-2 shadow-sm">
                     <div class="flex items-center gap-2 text-sm">
                       <span class="text-green-500">✓</span>
-                      <span class="text-gray-600">Safety Status:</span>
-                      <span class="font-bold text-green-600">SECURE</span>
+                      <span class="text-gray-600">{{ $t('mockup.safetyStatus') }}</span>
+                      <span class="font-bold text-green-600">{{ $t('mockup.secure') }}</span>
                     </div>
                   </div>
                 </div>
@@ -114,7 +115,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
                   </div>
-                  <span class="text-sm font-medium text-gray-700">Daily Streak: 7</span>
+                  <span class="text-sm font-medium text-gray-700">{{ $t('mockup.dailyStreak') }}</span>
                 </div>
               </div>
               
@@ -125,7 +126,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                     </svg>
                   </div>
-                  <span class="text-sm font-medium text-gray-700">3 Contacts</span>
+                  <span class="text-sm font-medium text-gray-700">{{ $t('mockup.contacts') }}</span>
                 </div>
               </div>
             </div>
@@ -139,10 +140,10 @@
       <div class="section-container">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Your Personal Safety Network
+            {{ $t('features.title') }}
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Simple yet powerful features designed to keep you safe and give your loved ones peace of mind.
+            {{ $t('features.description') }}
           </p>
         </div>
         
@@ -154,9 +155,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Daily Check-ins</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('features.dailyCheckins.title') }}</h3>
             <p class="text-gray-600">
-              A simple tap each day confirms you're okay. Set your preferred check-in time and receive gentle reminders.
+              {{ $t('features.dailyCheckins.description') }}
             </p>
           </div>
           
@@ -167,9 +168,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Automatic Alerts</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('features.automaticAlerts.title') }}</h3>
             <p class="text-gray-600">
-              If you miss a check-in, your emergency contacts receive automatic SMS or call alerts after configurable thresholds.
+              {{ $t('features.automaticAlerts.description') }}
             </p>
           </div>
           
@@ -180,9 +181,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Emergency Contacts</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('features.emergencyContacts.title') }}</h3>
             <p class="text-gray-600">
-              Add trusted friends or family members who will be notified if something seems wrong. They're your safety net.
+              {{ $t('features.emergencyContacts.description') }}
             </p>
           </div>
           
@@ -193,9 +194,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Personal Journal</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('features.personalJournal.title') }}</h3>
             <p class="text-gray-600">
-              Record your thoughts, photos, and voice notes. A private space to document your daily life and wellbeing.
+              {{ $t('features.personalJournal.description') }}
             </p>
           </div>
           
@@ -206,9 +207,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">100% Private</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('features.private.title') }}</h3>
             <p class="text-gray-600">
-              All your data stays on your device. No cloud storage, no tracking. Your safety information remains yours.
+              {{ $t('features.private.description') }}
             </p>
           </div>
           
@@ -219,9 +220,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Streak Tracking</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('features.streakTracking.title') }}</h3>
             <p class="text-gray-600">
-              Build healthy habits with streak tracking. See your check-in history on a beautiful calendar view.
+              {{ $t('features.streakTracking.description') }}
             </p>
           </div>
         </div>
@@ -233,10 +234,10 @@
       <div class="section-container">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            How It Works
+            {{ $t('howItWorks.title') }}
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Set up your safety network in minutes. It's that simple.
+            {{ $t('howItWorks.description') }}
           </p>
         </div>
         
@@ -246,9 +247,9 @@
             <div class="w-16 h-16 rounded-full bg-gradient-to-br from-alive-orange to-red-500 flex items-center justify-center mx-auto mb-6 shadow-xl shadow-alive-orange/30">
               <span class="text-2xl font-bold text-white">1</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Add Your Contacts</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('howItWorks.step1.title') }}</h3>
             <p class="text-gray-600">
-              Add trusted friends or family members who will be your emergency contacts.
+              {{ $t('howItWorks.step1.description') }}
             </p>
             <!-- Connector (hidden on mobile) -->
             <div class="hidden md:block absolute top-8 left-[60%] w-[80%] h-0.5 bg-gradient-to-r from-alive-orange to-transparent"></div>
@@ -259,9 +260,9 @@
             <div class="w-16 h-16 rounded-full bg-gradient-to-br from-alive-teal to-emerald-400 flex items-center justify-center mx-auto mb-6 shadow-xl shadow-alive-teal/30">
               <span class="text-2xl font-bold text-white">2</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Set Your Schedule</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('howItWorks.step2.title') }}</h3>
             <p class="text-gray-600">
-              Choose your daily check-in time and how long before alerts are sent.
+              {{ $t('howItWorks.step2.description') }}
             </p>
             <!-- Connector (hidden on mobile) -->
             <div class="hidden md:block absolute top-8 left-[60%] w-[80%] h-0.5 bg-gradient-to-r from-alive-teal to-transparent"></div>
@@ -272,9 +273,9 @@
             <div class="w-16 h-16 rounded-full bg-gradient-to-br from-alive-blue to-indigo-400 flex items-center justify-center mx-auto mb-6 shadow-xl shadow-alive-blue/30">
               <span class="text-2xl font-bold text-white">3</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Check In Daily</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('howItWorks.step3.title') }}</h3>
             <p class="text-gray-600">
-              Just tap the button each day. If you miss it, your contacts will know to check on you.
+              {{ $t('howItWorks.step3.description') }}
             </p>
           </div>
         </div>
@@ -291,10 +292,10 @@
       
       <div class="section-container relative z-10 text-center">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-          Start Living Safer Today
+          {{ $t('cta.title') }}
         </h2>
         <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-          Download I am alive! and give yourself and your loved ones the peace of mind you deserve.
+          {{ $t('cta.description') }}
         </p>
         
         <a href="https://apps.apple.com/app/id6757435082" target="_blank" rel="noopener noreferrer" class="inline-block bg-white rounded-xl px-6 py-4 hover:scale-105 transition-transform shadow-2xl">
@@ -303,8 +304,8 @@
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
             </svg>
             <div class="text-left">
-              <p class="text-xs text-gray-500">Download on the</p>
-              <p class="text-xl font-semibold text-gray-900">App Store</p>
+              <p class="text-xs text-gray-500">{{ $t('cta.downloadOn') }}</p>
+              <p class="text-xl font-semibold text-gray-900">{{ $t('cta.appStore') }}</p>
             </div>
           </div>
         </a>
@@ -321,17 +322,17 @@
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
               </svg>
             </div>
-            <span class="font-bold text-white">I am alive!</span>
+            <span class="font-bold text-white">{{ $t('app.name') }}</span>
           </div>
           
           <nav class="flex flex-wrap justify-center gap-6 text-sm">
-            <NuxtLink to="/privacy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</NuxtLink>
-            <NuxtLink to="/support" class="text-gray-400 hover:text-white transition-colors">Support</NuxtLink>
-            <a href="mailto:iamalive@amoylabs.com" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+            <NuxtLink :to="localePath('/privacy')" class="text-gray-400 hover:text-white transition-colors">{{ $t('footer.privacyPolicy') }}</NuxtLink>
+            <NuxtLink :to="localePath('/support')" class="text-gray-400 hover:text-white transition-colors">{{ $t('footer.support') }}</NuxtLink>
+            <a href="mailto:iamalive@amoylabs.com" class="text-gray-400 hover:text-white transition-colors">{{ $t('footer.contact') }}</a>
           </nav>
           
           <p class="text-sm text-gray-500">
-            &copy; {{ new Date().getFullYear() }} Amoy Labs. All rights reserved.
+            {{ $t('footer.copyright', { year: new Date().getFullYear() }) }}
           </p>
         </div>
       </div>
@@ -340,10 +341,19 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
+const { t, te } = useI18n()
+const localePath = useLocalePath()
+
+const heroDescription = computed(() => {
+  return t('hero.description')
+})
+
 useSeoMeta({
-  title: 'I am alive! - Safety Net for Solo Dwellers',
-  ogTitle: 'I am alive! - Safety Net for Solo Dwellers',
-  description: 'I am alive! is an iOS safety app for solo dwellers. Daily check-ins keep your loved ones informed. If you miss a check-in, your emergency contacts are automatically alerted.',
-  ogDescription: 'Daily check-ins. Automatic alerts. Peace of mind.',
+  title: () => t('seo.home.title'),
+  ogTitle: () => t('seo.home.title'),
+  description: () => t('seo.home.description'),
+  ogDescription: () => t('seo.home.ogDescription'),
 })
 </script>

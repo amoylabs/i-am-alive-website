@@ -1,0 +1,213 @@
+{
+  "app": {
+    "name": "I am alive!",
+    "tagline": "Safety Net for Solo Dwellers"
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "privacy": "Privacy",
+    "support": "Support",
+    "download": "Download",
+    "backToHome": "← Back to Home"
+  },
+  "hero": {
+    "availableOn": "Available on iOS",
+    "title": "The Safety Net for",
+    "titleHighlight": "Solo Dwellers",
+    "description": "Daily check-ins keep your loved ones informed. If you miss a check-in, your emergency contacts are <strong class='text-gray-800'>automatically alerted</strong>.",
+    "downloadButton": "Download on App Store",
+    "learnMore": "Learn More"
+  },
+  "mockup": {
+    "welcomeTo": "Welcome to",
+    "companion": "Your daily safety companion",
+    "iAmAliveButton": "I AM ALIVE!",
+    "safetyStatus": "Safety Status:",
+    "secure": "SECURE",
+    "dailyStreak": "Daily Streak: 7",
+    "contacts": "3 Contacts"
+  },
+  "features": {
+    "title": "Your Personal Safety Network",
+    "description": "Simple yet powerful features designed to keep you safe and give your loved ones peace of mind.",
+    "dailyCheckins": {
+      "title": "Daily Check-ins",
+      "description": "A simple tap each day confirms you're okay. Set your preferred check-in time and receive gentle reminders."
+    },
+    "automaticAlerts": {
+      "title": "Automatic Alerts",
+      "description": "If you miss a check-in, your emergency contacts receive automatic SMS or call alerts after configurable thresholds."
+    },
+    "emergencyContacts": {
+      "title": "Emergency Contacts",
+      "description": "Add trusted friends or family members who will be notified if something seems wrong. They're your safety net."
+    },
+    "personalJournal": {
+      "title": "Personal Journal",
+      "description": "Record your thoughts, photos, and voice notes. A private space to document your daily life and wellbeing."
+    },
+    "private": {
+      "title": "100% Private",
+      "description": "All your data stays on your device. No cloud storage, no tracking. Your safety information remains yours."
+    },
+    "streakTracking": {
+      "title": "Streak Tracking",
+      "description": "Build healthy habits with streak tracking. See your check-in history on a beautiful calendar view."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "description": "Set up your safety network in minutes. It's that simple.",
+    "step1": {
+      "title": "Add Your Contacts",
+      "description": "Add trusted friends or family members who will be your emergency contacts."
+    },
+    "step2": {
+      "title": "Set Your Schedule",
+      "description": "Choose your daily check-in time and how long before alerts are sent."
+    },
+    "step3": {
+      "title": "Check In Daily",
+      "description": "Just tap the button each day. If you miss it, your contacts will know to check on you."
+    }
+  },
+  "cta": {
+    "title": "Start Living Safer Today",
+    "description": "Download I am alive! and give yourself and your loved ones the peace of mind you deserve.",
+    "downloadOn": "Download on the",
+    "appStore": "App Store"
+  },
+  "footer": {
+    "privacyPolicy": "Privacy Policy",
+    "support": "Support",
+    "contact": "Contact",
+    "copyright": "© {year} Amoy Labs. All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: January 2026",
+    "priority": {
+      "title": "Your Privacy is Our Priority",
+      "description": "\"I am alive!\" is designed with privacy at its core. We believe your personal safety information is yours alone, and we've built our app to respect that principle."
+    },
+    "dataCollected": {
+      "title": "What Data We Collect",
+      "storedLocally": {
+        "title": "✅ Data Stored Locally on Your Device",
+        "checkins": "Check-in Records: Timestamps of your daily check-ins",
+        "contacts": "Emergency Contacts: Names and phone numbers of your designated contacts",
+        "journal": "Journal Entries: Personal notes and media you choose to record",
+        "settings": "App Settings: Your preferences (check-in time, alert thresholds, etc.)"
+      },
+      "notCollected": {
+        "title": "🚫 Data We Do NOT Collect",
+        "location": "We do {notBold} collect your location data",
+        "transmit": "We do {notBold} transmit your data to external servers",
+        "contacts": "We do {notBold} access your contacts beyond what you explicitly add",
+        "analytics": "We do {notBold} use analytics or tracking services",
+        "sell": "We do {notBold} sell or share your data with third parties"
+      }
+    },
+    "dataStorage": {
+      "title": "Data Storage",
+      "intro": "All your data is stored exclusively on your device using Apple's SwiftData framework. This means:",
+      "local": "Your data stays on your iPhone",
+      "delete": "If you delete the app, all data is permanently removed",
+      "noAccess": "We have no access to your personal information",
+      "icloud": "iCloud sync (if enabled on your device) may backup app data according to your device settings"
+    },
+    "emergencyAlerts": {
+      "title": "Emergency Alerts",
+      "description": "When you miss a check-in, the app may send SMS messages or initiate phone calls to your designated emergency contacts. This action is performed directly from your device and does not involve our servers.",
+      "rates": "Standard carrier messaging and calling rates may apply."
+    },
+    "permissions": {
+      "title": "Permissions",
+      "intro": "The app requests the following permissions:",
+      "notifications": "Notifications: To remind you of daily check-ins",
+      "contacts": "Contacts (optional): To easily select emergency contacts",
+      "camera": "Camera/Photos (optional): For journal entries with media",
+      "revoke": "You can revoke these permissions at any time through your device settings."
+    },
+    "children": {
+      "title": "Children's Privacy",
+      "description": "This app is not intended for use by children under 13. We do not knowingly collect personal information from children."
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "description": "We may update this privacy policy from time to time. Any changes will be reflected in the \"Last updated\" date at the top of this page."
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "description": "If you have any questions about this Privacy Policy, please contact us:"
+    }
+  },
+  "support": {
+    "title": "Support",
+    "intro": "We're here to help. Find answers to common questions or reach out to us directly.",
+    "emailSupport": {
+      "title": "Email Support",
+      "description": "Get help via email. We typically respond within 24 hours."
+    },
+    "followUs": {
+      "title": "Follow Us",
+      "description": "Stay updated with the latest news and announcements."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "setup": {
+        "question": "How do I set up the app?",
+        "answer": "When you first open the app, you'll be guided through a simple setup wizard. Add at least one emergency contact, set your preferred check-in time, and you're ready to go!"
+      },
+      "missCheckin": {
+        "question": "What happens if I miss a check-in?",
+        "answer": "If you don't check in by your scheduled time, the app will first send you reminder notifications. After a configurable grace period (default: 1 hour), it will automatically send an SMS to your emergency contacts. If there's still no response, it can escalate to a phone call after another threshold."
+      },
+      "cloudStorage": {
+        "question": "Is my data stored in the cloud?",
+        "answer": "No. All your data is stored locally on your device using Apple's SwiftData framework. We do not have access to your personal information. Your privacy is paramount."
+      },
+      "changeTime": {
+        "question": "Can I change my check-in time?",
+        "answer": "Yes! Go to Settings in the app and you can adjust your daily check-in time, reminder frequency, and alert thresholds at any time."
+      },
+      "manageContacts": {
+        "question": "How do I add or remove emergency contacts?",
+        "answer": "Navigate to the Contacts section in the app. You can add new contacts manually or select from your phone's contact list. To remove a contact, swipe left on their name or tap edit."
+      },
+      "offline": {
+        "question": "Does the app work without internet?",
+        "answer": "The app works offline for check-ins and journaling. However, to send SMS alerts to your emergency contacts, your phone needs cellular service."
+      },
+      "smsCharges": {
+        "question": "Will I be charged for SMS alerts?",
+        "answer": "The app uses your phone's native messaging capabilities. Standard carrier messaging rates may apply depending on your mobile plan."
+      },
+      "deleteData": {
+        "question": "How do I delete my data?",
+        "answer": "Since all data is stored locally on your device, deleting the app will permanently remove all your data. You can also clear specific data from the Settings menu within the app."
+      }
+    },
+    "stillNeedHelp": {
+      "title": "Still need help?",
+      "description": "Can't find the answer you're looking for? Our support team is happy to assist.",
+      "contactButton": "Contact Support"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "I am alive! - Safety Net for Solo Dwellers",
+      "description": "I am alive! is an iOS safety app for solo dwellers. Daily check-ins keep your loved ones informed. If you miss a check-in, your emergency contacts are automatically alerted.",
+      "ogDescription": "Daily check-ins. Automatic alerts. Peace of mind."
+    },
+    "privacy": {
+      "title": "Privacy Policy - I am alive!",
+      "description": "Learn how I am alive! protects your privacy. All data stays on your device - we never collect or share your personal information."
+    },
+    "support": {
+      "title": "Support - I am alive!",
+      "description": "Get help with I am alive! app. Find answers to frequently asked questions or contact our support team."
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+    "app": {
+        "name": "我还活着！",
+        "tagline": "独居者的安全守护"
+    },
+    "nav": {
+        "features": "功能特点",
+        "howItWorks": "使用方法",
+        "privacy": "隐私政策",
+        "support": "帮助支持",
+        "download": "下载",
+        "backToHome": "← 返回首页"
+    },
+    "hero": {
+        "availableOn": "现已上架 iOS",
+        "title": "专为",
+        "titleHighlight": "独居者",
+        "titleSuffix": "打造的安全守护",
+        "description": "每日打卡让您的亲友安心。如果您错过了打卡，您的紧急联系人将<strong class='text-gray-800'>自动收到提醒</strong>。",
+        "downloadButton": "在 App Store 下载",
+        "learnMore": "了解更多"
+    },
+    "mockup": {
+        "welcomeTo": "欢迎使用",
+        "companion": "您的每日安全伙伴",
+        "iAmAliveButton": "我还活着！",
+        "safetyStatus": "安全状态：",
+        "secure": "正常",
+        "dailyStreak": "连续打卡：7 天",
+        "contacts": "3 位联系人"
+    },
+    "features": {
+        "title": "您的个人安全网络",
+        "description": "简单而强大的功能，旨在保护您的安全，让您的亲友安心。",
+        "dailyCheckins": {
+            "title": "每日打卡",
+            "description": "每天轻轻一点即可确认平安。设置您偏好的打卡时间，接收温馨提醒。"
+        },
+        "automaticAlerts": {
+            "title": "自动提醒",
+            "description": "如果您错过打卡，您的紧急联系人将在设定的时间后自动收到短信或电话提醒。"
+        },
+        "emergencyContacts": {
+            "title": "紧急联系人",
+            "description": "添加您信任的朋友或家人，当有异常情况时他们会收到通知。他们就是您的安全网。"
+        },
+        "personalJournal": {
+            "title": "个人日记",
+            "description": "记录您的想法、照片和语音笔记。一个私密空间，记录您的日常生活和健康状况。"
+        },
+        "private": {
+            "title": "100% 私密",
+            "description": "所有数据都保存在您的设备上。无云存储，无追踪。您的安全信息只属于您。"
+        },
+        "streakTracking": {
+            "title": "连续记录",
+            "description": "通过连续打卡记录培养健康习惯。在精美的日历视图中查看您的打卡历史。"
+        }
+    },
+    "howItWorks": {
+        "title": "使用方法",
+        "description": "几分钟内即可设置您的安全网络。就是这么简单。",
+        "step1": {
+            "title": "添加联系人",
+            "description": "添加您信任的朋友或家人作为紧急联系人。"
+        },
+        "step2": {
+            "title": "设置时间",
+            "description": "选择您的每日打卡时间以及发送提醒前的等待时间。"
+        },
+        "step3": {
+            "title": "每日打卡",
+            "description": "每天轻轻一点即可。如果您错过打卡，您的联系人会知道要来看看您。"
+        }
+    },
+    "cta": {
+        "title": "今天就开始更安全的生活",
+        "description": "下载「我还活着！」，给自己和亲友应得的安心。",
+        "downloadOn": "下载自",
+        "appStore": "App Store"
+    },
+    "footer": {
+        "privacyPolicy": "隐私政策",
+        "support": "帮助支持",
+        "contact": "联系我们",
+        "copyright": "© {year} Amoy Labs. 保留所有权利。"
+    },
+    "privacy": {
+        "title": "隐私政策",
+        "lastUpdated": "最后更新：2026年1月",
+        "priority": {
+            "title": "您的隐私是我们的首要任务",
+            "description": "「我还活着！」的设计核心就是保护隐私。我们相信您的个人安全信息只属于您，我们构建应用时始终尊重这一原则。"
+        },
+        "dataCollected": {
+            "title": "我们收集哪些数据",
+            "storedLocally": {
+                "title": "✅ 存储在您设备上的数据",
+                "checkins": "打卡记录：您每日打卡的时间戳",
+                "contacts": "紧急联系人：您指定联系人的姓名和电话号码",
+                "journal": "日记条目：您选择记录的个人笔记和媒体",
+                "settings": "应用设置：您的偏好设置（打卡时间、提醒阈值等）"
+            },
+            "notCollected": {
+                "title": "🚫 我们不收集的数据",
+                "location": "我们{notBold}收集您的位置数据",
+                "transmit": "我们{notBold}将您的数据传输到外部服务器",
+                "contacts": "我们{notBold}访问您明确添加之外的联系人",
+                "analytics": "我们{notBold}使用分析或追踪服务",
+                "sell": "我们{notBold}向第三方出售或共享您的数据"
+            }
+        },
+        "dataStorage": {
+            "title": "数据存储",
+            "intro": "您的所有数据都使用 Apple 的 SwiftData 框架专门存储在您的设备上。这意味着：",
+            "local": "您的数据保留在您的 iPhone 上",
+            "delete": "如果您删除应用，所有数据将被永久删除",
+            "noAccess": "我们无法访问您的个人信息",
+            "icloud": "如果您的设备启用了 iCloud 同步，可能会根据您的设备设置备份应用数据"
+        },
+        "emergencyAlerts": {
+            "title": "紧急提醒",
+            "description": "当您错过打卡时，应用可能会向您指定的紧急联系人发送短信或拨打电话。此操作直接从您的设备执行，不涉及我们的服务器。",
+            "rates": "可能适用标准运营商短信和通话费率。"
+        },
+        "permissions": {
+            "title": "权限",
+            "intro": "应用请求以下权限：",
+            "notifications": "通知：提醒您每日打卡",
+            "contacts": "通讯录（可选）：方便选择紧急联系人",
+            "camera": "相机/照片（可选）：用于带媒体的日记条目",
+            "revoke": "您可以随时通过设备设置撤销这些权限。"
+        },
+        "children": {
+            "title": "儿童隐私",
+            "description": "此应用不适合 13 岁以下儿童使用。我们不会故意收集儿童的个人信息。"
+        },
+        "changes": {
+            "title": "政策变更",
+            "description": "我们可能会不时更新此隐私政策。任何更改都将反映在本页面顶部的「最后更新」日期中。"
+        },
+        "contactUs": {
+            "title": "联系我们",
+            "description": "如果您对此隐私政策有任何疑问，请联系我们："
+        }
+    },
+    "support": {
+        "title": "帮助支持",
+        "intro": "我们随时为您提供帮助。查找常见问题的答案或直接联系我们。",
+        "emailSupport": {
+            "title": "邮件支持",
+            "description": "通过邮件获取帮助。我们通常在 24 小时内回复。"
+        },
+        "followUs": {
+            "title": "关注我们",
+            "description": "获取最新消息和公告。"
+        },
+        "faq": {
+            "title": "常见问题",
+            "setup": {
+                "question": "如何设置应用？",
+                "answer": "首次打开应用时，您将通过一个简单的设置向导进行引导。添加至少一个紧急联系人，设置您偏好的打卡时间，就可以开始使用了！"
+            },
+            "missCheckin": {
+                "question": "如果我错过打卡会怎样？",
+                "answer": "如果您在预定时间未打卡，应用会首先向您发送提醒通知。在可配置的宽限期（默认：1 小时）后，它会自动向您的紧急联系人发送短信。如果仍然没有响应，可以在另一个阈值后升级为电话。"
+            },
+            "cloudStorage": {
+                "question": "我的数据存储在云端吗？",
+                "answer": "不是。您的所有数据都使用 Apple 的 SwiftData 框架存储在您的本地设备上。我们无法访问您的个人信息。您的隐私至关重要。"
+            },
+            "changeTime": {
+                "question": "我可以更改打卡时间吗？",
+                "answer": "可以！进入应用的设置，您可以随时调整每日打卡时间、提醒频率和提醒阈值。"
+            },
+            "manageContacts": {
+                "question": "如何添加或删除紧急联系人？",
+                "answer": "进入应用的联系人部分。您可以手动添加新联系人或从手机通讯录中选择。要删除联系人，向左滑动其姓名或点击编辑。"
+            },
+            "offline": {
+                "question": "应用在没有网络的情况下能工作吗？",
+                "answer": "应用可以离线进行打卡和写日记。但是，要向紧急联系人发送短信提醒，您的手机需要蜂窝网络服务。"
+            },
+            "smsCharges": {
+                "question": "短信提醒会收费吗？",
+                "answer": "应用使用您手机的原生短信功能。根据您的手机套餐，可能适用标准运营商短信费率。"
+            },
+            "deleteData": {
+                "question": "如何删除我的数据？",
+                "answer": "由于所有数据都存储在您的本地设备上，删除应用将永久删除您的所有数据。您也可以从应用内的设置菜单中清除特定数据。"
+            }
+        },
+        "stillNeedHelp": {
+            "title": "还需要帮助？",
+            "description": "找不到您要找的答案？我们的支持团队很乐意为您提供帮助。",
+            "contactButton": "联系支持"
+        }
+    },
+    "seo": {
+        "home": {
+            "title": "我还活着！ - 独居者的安全守护",
+            "description": "「我还活着！」是一款专为独居者设计的 iOS 安全应用。每日打卡让您的亲友安心。如果您错过打卡，您的紧急联系人将自动收到提醒。",
+            "ogDescription": "每日打卡。自动提醒。安心无忧。"
+        },
+        "privacy": {
+            "title": "隐私政策 - 我还活着！",
+            "description": "了解「我还活着！」如何保护您的隐私。所有数据都保存在您的设备上 - 我们绝不收集或共享您的个人信息。"
+        },
+        "support": {
+            "title": "帮助支持 - 我还活着！",
+            "description": "获取「我还活着！」应用帮助。查找常见问题的答案或联系我们的支持团队。"
+        }
+    }
+}
