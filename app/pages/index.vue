@@ -44,11 +44,7 @@
               {{ $t('hero.availableOn') }}
             </div>
             
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-              {{ $t('hero.title') }}
-              <span class="gradient-text"> {{ $t('hero.titleHighlight') }}</span>
-              <template v-if="$te('hero.titleSuffix')">{{ $t('hero.titleSuffix') }}</template>
-            </h1>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">{{ $t('hero.title') }}<span class="gradient-text">{{ $t('hero.titleHighlight') }}</span><template v-if="$te('hero.titleSuffix')">{{ $t('hero.titleSuffix') }}</template></h1>
             
             <p class="text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0" v-html="heroDescription"></p>
             
