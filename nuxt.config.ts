@@ -10,7 +10,6 @@ export default defineNuxtConfig({
             { code: 'zh', name: '简体中文', file: 'zh.json' }
         ],
         defaultLocale: 'en',
-        lazy: true,
         langDir: '../locales',
         strategy: 'prefix_except_default',
         detectBrowserLanguage: {
@@ -20,9 +19,6 @@ export default defineNuxtConfig({
         },
         compilation: {
             strictMessage: false
-        },
-        bundle: {
-            optimizeTranslationDirective: false
         },
         vueI18n: './i18n.config.ts'
     },
