@@ -324,7 +324,7 @@
           <nav class="flex flex-wrap justify-center gap-6 text-sm">
             <NuxtLink :to="localePath('/privacy')" class="text-gray-400 hover:text-white transition-colors">{{ $t('footer.privacyPolicy') }}</NuxtLink>
             <NuxtLink :to="localePath('/support')" class="text-gray-400 hover:text-white transition-colors">{{ $t('footer.support') }}</NuxtLink>
-            <a href="mailto:iamalive@amoylabs.com" class="text-gray-400 hover:text-white transition-colors">{{ $t('footer.contact') }}</a>
+            <a href="mailto:imhere@amoylabs.com" class="text-gray-400 hover:text-white transition-colors">{{ $t('footer.contact') }}</a>
           </nav>
           
           <p class="text-sm text-gray-500">

@@ -30,7 +30,7 @@
           
           <!-- Quick Links -->
           <div class="grid md:grid-cols-2 gap-6 mb-16">
-            <a href="mailto:iamalive@amoylabs.com" class="glass-card p-6 hover:shadow-2xl transition-all group">
+            <a href="mailto:imhere@amoylabs.com" class="glass-card p-6 hover:shadow-2xl transition-all group">
               <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-alive-orange to-amber-400 flex items-center justify-center mb-4 shadow-lg shadow-alive-orange/20 group-hover:scale-110 transition-transform">
                 <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -38,10 +38,10 @@
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('support.emailSupport.title') }}</h3>
               <p class="text-gray-600 mb-2">{{ $t('support.emailSupport.description') }}</p>
-              <span class="text-alive-orange font-medium">iamalive@amoylabs.com →</span>
+              <span class="text-alive-orange font-medium">imhere@amoylabs.com →</span>
             </a>
             
-            <a href="https://twitter.com/iamaliveapp" target="_blank" rel="noopener noreferrer" class="glass-card p-6 hover:shadow-2xl transition-all group">
+            <a href="https://twitter.com/imhereapp" target="_blank" rel="noopener noreferrer" class="glass-card p-6 hover:shadow-2xl transition-all group">
               <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-alive-blue to-indigo-400 flex items-center justify-center mb-4 shadow-lg shadow-alive-blue/20 group-hover:scale-110 transition-transform">
                 <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -49,7 +49,7 @@
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('support.followUs.title') }}</h3>
               <p class="text-gray-600 mb-2">{{ $t('support.followUs.description') }}</p>
-              <span class="text-alive-blue font-medium">@iamaliveapp →</span>
+              <span class="text-alive-blue font-medium">@imhereapp →</span>
             </a>
           </div>
 
@@ -122,7 +122,7 @@
             <p class="text-gray-600 mb-6">
               {{ $t('support.stillNeedHelp.description') }}
             </p>
-            <a href="mailto:iamalive@amoylabs.com" class="btn-primary">
+            <a href="mailto:imhere@amoylabs.com" class="btn-primary">
               {{ $t('support.stillNeedHelp.contactButton') }}
             </a>
           </div>
